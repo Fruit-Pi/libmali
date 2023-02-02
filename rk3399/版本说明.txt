@@ -1,0 +1,15 @@
+[20220316]midgard_m8p0_ohos_arm32_v3:
+    1.重定向debug版本输出log文件到绝对路径"/data/mali_this_file_is_for_testing_purposes_only.out";
+    2.添加 hilog 输出报错日志;
+
+[20220321]midgard_m8p0_ohos_arm32_v4:
+    1.添加gles 在遇到 first_error 时,输出log到hilog中;
+
+[20220322]midgard_m8p0_ohos_arm32_v5:
+    1.修复NativeWindowRequestBuffer获取到null的window_buffer不走异常调用流程;
+
+[20220629]midgard_m8p0_ohos_arm32_v6:
+    1.修复buffer_planes的line_stride值16对齐问题.
+
+[20220805]midgard_m8p0_ohos_arm32_v7:
+    1.修复ABGR8888格式问题.

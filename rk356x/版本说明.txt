@@ -1,0 +1,21 @@
+[20220316]bifrost_g2p0_ohos_arm32_v3:
+    1.重定向debug版本输出log文件到绝对路径"/data/mali_this_file_is_for_testing_purposes_only.out";
+    2.添加 hilog 输出报错日志;
+
+[20220321]bifrost_g2p0_ohos_arm32_v4:
+    1.添加gles 在遇到 first_error 时,输出log到hilog中;
+
+[20220322]bifrost_g2p0_ohos_arm32_v5:
+    1.修复NativeWindowRequestBuffer获取到null的window_buffer不走异常调用流程;
+
+[20220406]bifrost_g2p0_ohos_arm32_v6:
+    1.ohos: 修复buffer_planes的line_stride值16对齐问题;
+[20220426]bifrost_g2p0_ohos_v7:
+    1.添加arm64版本
+    2.配置"-fstack-protector"编译选项
+[20220507]bifrost_g2p0_ohos_v8:
+    1.workaround 打开GPU合成后 NativeWindowRequestBuffer 失败引发的crash问题;
+    2.在cancelbuffer之后 添加Unreference;
+[20220519]bifrost_g2p0_ohos_v9:
+    1.添加get_native_buffer winsys_ohos;
+    2.添加EGL_NATIVE_BUFFER_OHOS修复EGLCreateImageKHR失败问题;
